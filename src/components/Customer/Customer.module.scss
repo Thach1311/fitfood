@@ -1,11 +1,13 @@
-.natural {
+.customer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
     background-color: #e5e5e5;
-
     .head1 {
         font-weight: 400;
         font-size: 40px;
@@ -15,7 +17,7 @@
     .head2 {
         font-weight: 700;
         font-size: 40px;
-        color: black;
+        color: rgb(255, 255, 255);
         letter-spacing: 5px;
     }
     .line {
@@ -28,22 +30,32 @@
 
 .listItem {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
     .item {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 350px;
-        height: 360px;
-        margin: 10px;
-        .img img {
-            border-radius: 5px;
-            margin-bottom: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 650px;
+        img {
+            width: 210px;
+            height: 210px;
+            margin: 10px;
         }
-        .des {
-            width: 350px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #686868;
+        &:hover {
+            overflow-y: scroll;
         }
     }
+}
+
+.des {
+    width: 350px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #686868;
+    width: 1100px;
 }
