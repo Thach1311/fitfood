@@ -13,60 +13,72 @@ function Header() {
                 <img src={logo} alt="" />
             </div>
             <div className={cx('menu')}>
-                <Link
-                    className={cx(`${active === 'TRANG CHỦ' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('TRANG CHỦ');
-                    }}
-                    to="/"
-                >
-                    TRANG CHỦ
-                </Link>
-                <Link
-                    className={cx(`${active === 'THỰC ĐƠN' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('THỰC ĐƠN');
-                    }}
-                    to="/menufood"
-                >
-                    THỰC ĐƠN
-                </Link>
-                <Link
-                    className={cx(`${active === 'TƯ VẤN' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('TƯ VẤN');
-                    }}
-                    to="/help"
-                >
-                    TƯ VẤN
-                </Link>
-                <Link
-                    className={cx(`${active === 'ĐẶT HÀNG' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('ĐẶT HÀNG');
-                    }}
-                    to="/order"
-                >
-                    ĐẶT HÀNG
-                </Link>
-                <Link
-                    className={cx(`${active === 'TIN TỨC' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('TIN TỨC');
-                    }}
-                    to="/news"
-                >
-                    TIN TỨC
-                </Link>
-                <Link
-                    className={cx(`${active === 'FAQS' ? 'active' : ''}`)}
-                    onClick={() => {
-                        setActive('FAQS');
-                    }}
-                    to="/faqs"
-                >
-                    FAQS
-                </Link>
+                <div>
+                    <Link
+                        className={cx(`${active === 'TRANG CHỦ' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('TRANG CHỦ');
+                        }}
+                        to="/"
+                    >
+                        TRANG CHỦ
+                    </Link>
+                </div>
+                <div>
+                    <Link
+                        className={cx(`${active === 'THỰC ĐƠN' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('THỰC ĐƠN');
+                        }}
+                        to="/menufood"
+                    >
+                        THỰC ĐƠN
+                    </Link>
+                </div>
+                <div>
+                    <Link
+                        className={cx(`${active === 'TƯ VẤN' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('TƯ VẤN');
+                        }}
+                        to="/help"
+                    >
+                        TƯ VẤN
+                    </Link>
+                </div>
+                <div>
+                    <Link
+                        className={cx(`${active === 'ĐẶT HÀNG' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('ĐẶT HÀNG');
+                        }}
+                        to="/order"
+                    >
+                        ĐẶT HÀNG
+                    </Link>
+                </div>
+                <div>
+                    <Link
+                        className={cx(`${active === 'TIN TỨC' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('TIN TỨC');
+                        }}
+                        to="/news"
+                    >
+                        TIN TỨC
+                    </Link>
+                </div>
+                <div>
+                    <Link
+                        className={cx(`${active === 'FAQS' ? 'active' : ''}`)}
+                        onClick={() => {
+                            setActive('FAQS');
+                        }}
+                        to="/faqs"
+                    >
+                        FAQS
+                    </Link>
+                </div>
             </div>
             <div className={cx('formSignUpAndSignIn')}>
                 <div className={cx('signUp')}>Đăng ký</div>

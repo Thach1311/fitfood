@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import styles from './Menu.module.scss';
+import styles from './MenuFoodChay.module.scss';
 import { GrPrevious } from 'react-icons/gr';
 import { GrLinkNext } from 'react-icons/gr';
 import { GrNext } from 'react-icons/gr';
@@ -8,40 +8,35 @@ function Menu() {
     return (
         <div className={cx('menu')}>
             <div className={cx('form')}>
-                <h1 className={cx('headingText')}>THỰC ĐƠN</h1>
+                <h1 className={cx('headingText')}>THỰC ĐƠN CHAY</h1>
                 <div className={cx('line')}></div>
-                <p>Thực đơn Fitfood là sự kết hợp tinh tế của ẩm thực Đông Tây</p>
-                <p>
-                    Từng bữa ăn được thiết kế bởi bếp trưởng nhà hàng cùng đội ngũ dinh dưỡng để đảm bảo được sự cân
-                    bằng trong hương vị nhưng vẫn giữ được chất lượng ở mức cao nhất. Tất cả các món đều đảm bảo ko bột
-                    ngọt và ít đường
-                </p>
+
                 <div className={cx('dateAndOrder')}>
                     <div className={cx('date')}>
-                        <div className="hover:text-[#FF2200] flex justify-center items-center">
+                        <div className="hover:text-[#4bc849] flex justify-center items-center">
                             <GrPrevious />
 
-                            <div className="hover:text-[#FF2200]">TUẦN TRƯỚC</div>
+                            <div className="hover:text-[#4bc849]">TUẦN TRƯỚC</div>
                         </div>
                         <div className="text-[30px] font-[700]"> 15.04</div>
                         <div className="text-[30px] font-[700]">
                             <GrLinkNext />
                         </div>
                         <div className="text-[30px] font-[700]">19.04</div>
-                        <div className="hover:text-[#FF2200] flex justify-center items-center">
+                        <div className="hover:text-[#4bc849] flex justify-center items-center">
                             TUẦN SAU
-                            <div className="hover:text-[#FF2200]">
+                            <div className="hover:text-[#4bc849]">
                                 <GrNext />
                             </div>
                         </div>
                     </div>
-                    <button className="w-[170px] h-[50px] bg-[#FF2033] text-[#ffff] text-[16px] hover:bg-[#ff203ad1]">
+                    <button className="w-[170px] h-[50px] bg-[#4bc849] text-[#ffff] text-[16px] hover:bg-[#4bc850]">
                         Đặt Ngay
                     </button>
                 </div>
 
                 <div className={cx('day')}>
-                    <div className="flex justify-between items-center font-[700] text-[20px] text-[#ff2200] ">NGÀY</div>
+                    <div className="flex justify-between items-center font-[700] text-[20px] text-[#4bc849] ">NGÀY</div>
                     <span className="w-[1px] h-[30px] bg-[#dddd]"></span>
                     <div className="flex justify-between items-center font-[700] text-[20px] text-[#ffff] w-[10%]">
                         SÁNG
@@ -132,6 +127,16 @@ function Menu() {
                         </div>
                     </div>
                 </div>
+
+                <h1 className="text-[24px] font-[700] text-[#FF2033]">Note</h1>
+                <p className="text-[14px] font-[500] text-[#686868] ">
+                    Các phần ăn được tính toán calories cẩn thận. Chỉ số dinh dưỡng dưới tên phần ăn được liệt kê theo
+                    thứ tự Năng lượng (Kcal/Calories), Tinh Bột, Chất béo và Chất đạm. <br></br> Lưu ý: Các phần ăn của
+                    Fitfood luôn được giao lạnh, đựng trong hộp nhựa thân thiện với lò vi sóng. Vui lòng bảo quản lạnh
+                    sau khi nhận hàng và hâm nóng từ 2-3 phút trước khi dùng.<br></br> Phần ăn bình thường chỉ bao gồm
+                    thịt và rau củ, Tinh bột phức (gạo lức, gạo nâu, mì rau củ, bún, bánh mì nâu) sẽ được gửi kèm trong
+                    phần ăn có ghi chú dấu (+)
+                </p>
             </div>
         </div>
     );
