@@ -1,0 +1,43 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headingText {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: black;
+}
+.line {
+    height: 10px;
+    width: 50px;
+    background-color: #ff2033;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #686868;
+    margin-bottom: 10px;
+}
+.dateAndOrder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+.day {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    height: 60px;
+    align-items: center;
+}
