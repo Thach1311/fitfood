@@ -6,7 +6,7 @@
    
 }
 .form{
-    width: 1383px;
+    width: 100%;
 }
 .headingText {
     font-weight: 700;
@@ -67,5 +67,38 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+
+.menuFoodChayMouse {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3000;
+    transition: all 0.5s linear;
+    animation: show 0.5s linear;
+    display: none;
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 40%;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
     }
 }
